@@ -1,0 +1,13 @@
+#To test whether the server is up
+curl https://flask-app-561457278990.us-west1.run.app
+
+
+#To give a sample test
+
+curl -H "Content-Type: application/json" \
+     -X POST \
+     -d '{"model":"Hornet Sportabout","cyl":8,"disp":360.0,"hp":175,"drat":3.15,"wt":3.440,"qsec":17.02,"vs":0,"am":0,"gear":3,"carb":2}' \
+     https://flask-app-561457278990.us-west1.run.app/predict_mpg
+
+
+
