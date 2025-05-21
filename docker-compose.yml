@@ -1,0 +1,9 @@
+services:
+  app:
+    build : .
+    platform: linux/amd64  
+    volumes:
+     - .:/server
+    ports:
+     - 5001:5001
+
